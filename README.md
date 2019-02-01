@@ -1,2 +1,2 @@
-# spring-boot-protobuff
-Proof of concept to show the uses of Google Protobuff with Spring Boot
+# Spring Boot Protobuff
+Proof of concept to show the use of Google Protobuff inside a Spring Boot Application. Not for real uses only with demostration purposes.
