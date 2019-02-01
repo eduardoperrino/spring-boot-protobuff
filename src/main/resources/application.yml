@@ -1,0 +1,8 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+logging:
+  level:
+    root: INFO
+    me.perrino.demo.protobuff: DEBUG

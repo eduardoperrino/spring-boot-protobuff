@@ -1,0 +1,8 @@
+version: '3'
+services:
+  protobuff:
+    image: "perrino/protobuff:@project.version@"
+    volumes:
+      - $PWD/data:/tmp
+    ports:
+    - '8082:8082'

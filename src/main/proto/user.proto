@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package model;
+
+option java_package = "me.perrino.demo.protobuff.ports.data.model";
+option java_outer_classname = "UserProtos";
+
+
+message User {
+
+     int32 id = 1;
+     string name = 2;
+
+}
