@@ -19,8 +19,11 @@
         <lombok.version>1.18.0</lombok.version>
         <protobuf-java-format.version>1.4</protobuf-java-format.version>
         <vavr.version>0.9.2</vavr.version>
+        <com.google.protobuf.protobuf-java.version>3.4.0</com.google.protobuf.protobuf-java.version>
         <dockerfile-maven.version>1.4.10</dockerfile-maven.version>
         <os-maven-plugin.version>1.5.0.Final</os-maven-plugin.version>
+        <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
+        <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
 	</properties>
 
 	<dependencies>
@@ -42,7 +45,7 @@
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
-            <version>3.4.0</version>
+            <version>${com.google.protobuf.protobuf-java.version}</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.protobuf-java-format</groupId>
@@ -79,7 +82,7 @@
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
-                <version>0.6.1</version>
+                <version>${protobuf-maven-plugin.version}</version>
                 <extensions>true</extensions>
                 <executions>
                     <execution>
@@ -117,7 +120,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.0.2</version>
+                <version>${maven-resources-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>copy-docker-compose</id>

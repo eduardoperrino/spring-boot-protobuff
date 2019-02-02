@@ -6,7 +6,7 @@ Proof of concept to show the use of Google Protobuf inside a Spring Boot Applica
 
 The applicaction exposes a simple http endpoint at "/" on port "8082" that expects a body in JSON format that should contain two fields _id_ (integer) and _name_ (String).
 
-This is an example using [httpie](http://github.com) client library:
+This is an example request using [httpie](http://github.com) client library:
 
 ```
 http --json -f POST ":8082/" id=1 name=isaac
@@ -26,7 +26,7 @@ Internally, the application creates a file in disk per request using Google Prot
 ## Run application
 * docker-compose up
 
-## Run application to development
+## Run application without docker
 * ./mvnw spring-boot:run
 
 ## Test application
